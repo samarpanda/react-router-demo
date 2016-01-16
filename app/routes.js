@@ -1,14 +1,14 @@
 import React from 'react';
 import history from 'history';
-import { Router, Route, Link, browserHistory } from 'react-router';
+import { IndexRoute, Route } from 'react-router';
 
 const routes = () => {
   return (
-      <Router>
-        <Route path="/" component={require('./handlers/Root')}/>
+      <Route path="/">
+        <IndexRoute component={require('./handlers/Root')}/>
         <Route path="page1" component={require('./handlers/Page1')}/>
         <Route path="page2" component={require('./handlers/Page2')}/>
-      </Router>
+      </Route>
   );
 };
 

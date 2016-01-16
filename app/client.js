@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Page from './handlers/Root';
-import { Router, Route, Link, browserHistory } from 'react-router';
+import { Router, Route } from 'react-router';
+import history from './history';
 
 import rconfig from './routes.js';
-ReactDOM.render(<Router history={browserHistory} routes={rconfig()}/>, document.getElementById('app'));
+ReactDOM.render(<Router history={history} routes={rconfig()}/>, document.getElementById('app'));

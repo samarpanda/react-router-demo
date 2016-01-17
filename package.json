@@ -26,6 +26,7 @@
     "react-router": "^1.0.3"
   },
   "devDependencies": {
+    "babel-cli": "^6.4.0",
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
     "babel-plugin-transform-react-jsx": "^6.4.0",

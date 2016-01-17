@@ -16,7 +16,7 @@ const config = {
 		webPath('client.js')
 	],
 	output: {
-		path: process.env.NODE_ENV === 'production' ? dirPath('dist') : dirPath('build'),
+		path: process.env.NODE_ENV === 'production' ? dirPath('dist') : dirPath('__build__'),
 		filename: 'js/bundle.js'
 	},
 	module: {

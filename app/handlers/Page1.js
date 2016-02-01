@@ -1,4 +1,7 @@
-import React from 'react';
+import React from 'react'
+import Contactlist from './../components/contactlist'
+import DATA from './../utils/data'
+
 
 var App = module.exports = React.createClass({
   getInitialState(){
@@ -6,8 +9,11 @@ var App = module.exports = React.createClass({
   },
 
   render(){
+
     return (
-      <div>Page{this.state.page} handler</div>
+      <div>Page{this.state.page}
+      	<Contactlist contacts={DATA} />
+      </div>
     );
   }
 });

@@ -7,7 +7,11 @@ var App = module.exports = React.createClass({
 
   render(){
     return (
-      <div>Page{this.state.page} handler</div>
+    <div>
+		<div>Header Block</div>
+		{this.props.children}
+		<div>Footer Block</div>
+	</div>
     );
   }
 });
